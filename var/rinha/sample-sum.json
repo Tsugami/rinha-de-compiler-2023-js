@@ -1,0 +1,39 @@
+{
+  "name": "var/rinha/sample-sum.rinha",
+  "expression": {
+    "kind": "Binary",
+    "lhs": {
+      "kind": "Int",
+      "value": 1,
+      "location": {
+        "id": 0,
+        "start": 0,
+        "end": 1,
+        "filename": "var/rinha/sample-sum.rinha"
+      }
+    },
+    "op": "Add",
+    "rhs": {
+      "kind": "Int",
+      "value": 1,
+      "location": {
+        "id": 1,
+        "start": 4,
+        "end": 5,
+        "filename": "var/rinha/sample-sum.rinha"
+      }
+    },
+    "location": {
+      "id": 2,
+      "start": 0,
+      "end": 5,
+      "filename": "var/rinha/sample-sum.rinha"
+    }
+  },
+  "location": {
+    "id": 3,
+    "start": 0,
+    "end": 5,
+    "filename": "var/rinha/sample-sum.rinha"
+  }
+}
