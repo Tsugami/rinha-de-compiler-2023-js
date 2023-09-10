@@ -66,6 +66,10 @@ const interpreter = (term, ctx = {}) => {
       const result = interpreter(term.callee, ctx)
 
       if (result instanceof Closure) {
+        if (result.term.parameters.length !== term.arguments.length) {
+          throw new Error(`Invalid number of arguments for ${result.term.name.text}`)
+        };
+
         const args = term.arguments.map(arg => interpreter(arg, ctx))
         const argsObj = result.term.parameters.reduce((acc, arg, i) => {
           acc[arg.text] = args[i]
